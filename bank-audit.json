@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "questionCount": 288,
+  "families": 70,
+  "originalTutorial": 16,
+  "evaluatives": 10,
+  "variations": 262,
+  "complete": false,
+  "notes": [
+    "Only the explicitly curated items are scored. Remaining tutorial questions require transcription and verification.",
+    "2022–23 Quiz 2 Set A Q2 is excluded: its supplied key contradicts the connectedness of the displayed convex sets.",
+    "Historical polar arc length, projectile motion, and error estimation are excluded from recommended practice."
+  ]
+}

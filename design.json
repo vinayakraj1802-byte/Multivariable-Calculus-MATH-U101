@@ -1,0 +1,274 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-08T21:22:49.725Z",
+  "title": "Design System: CalcPath",
+  "extensions": {
+    "colorMeta": {
+      "cp-blue": {
+        "role": "primary",
+        "displayName": "Cobalt action",
+        "tonalRamp": [
+          "oklch(15% 0.19 263)",
+          "oklch(27% 0.19 263)",
+          "oklch(38% 0.19 263)",
+          "oklch(49% 0.19 263)",
+          "oklch(61% 0.19 263)",
+          "oklch(72% 0.19 263)",
+          "oklch(84% 0.19 263)",
+          "oklch(95% 0.19 263)"
+        ]
+      },
+      "cp-ink": {
+        "role": "neutral",
+        "displayName": "Navy ink",
+        "tonalRamp": [
+          "oklch(15% 0.05 255)",
+          "oklch(27% 0.05 255)",
+          "oklch(38% 0.05 255)",
+          "oklch(49% 0.05 255)",
+          "oklch(61% 0.05 255)",
+          "oklch(72% 0.05 255)",
+          "oklch(84% 0.05 255)",
+          "oklch(95% 0.05 255)"
+        ]
+      },
+      "cp-muted": {
+        "role": "neutral",
+        "displayName": "Slate annotation",
+        "tonalRamp": [
+          "oklch(15% 0.04 254)",
+          "oklch(27% 0.04 254)",
+          "oklch(38% 0.04 254)",
+          "oklch(49% 0.04 254)",
+          "oklch(61% 0.04 254)",
+          "oklch(72% 0.04 254)",
+          "oklch(84% 0.04 254)",
+          "oklch(95% 0.04 254)"
+        ]
+      },
+      "cp-line": {
+        "role": "neutral",
+        "displayName": "Fine rule",
+        "tonalRamp": [
+          "oklch(15% 0.02 258)",
+          "oklch(27% 0.02 258)",
+          "oklch(38% 0.02 258)",
+          "oklch(49% 0.02 258)",
+          "oklch(61% 0.02 258)",
+          "oklch(72% 0.02 258)",
+          "oklch(84% 0.02 258)",
+          "oklch(95% 0.02 258)"
+        ]
+      },
+      "cp-paper": {
+        "role": "neutral",
+        "displayName": "Working paper",
+        "tonalRamp": [
+          "oklch(15% 0 0)",
+          "oklch(27% 0 0)",
+          "oklch(38% 0 0)",
+          "oklch(49% 0 0)",
+          "oklch(61% 0 0)",
+          "oklch(72% 0 0)",
+          "oklch(84% 0 0)",
+          "oklch(95% 0 0)"
+        ]
+      },
+      "cp-wash": {
+        "role": "neutral",
+        "displayName": "Cool wash",
+        "tonalRamp": [
+          "oklch(15% 0.008 260)",
+          "oklch(27% 0.008 260)",
+          "oklch(38% 0.008 260)",
+          "oklch(49% 0.008 260)",
+          "oklch(61% 0.008 260)",
+          "oklch(72% 0.008 260)",
+          "oklch(84% 0.008 260)",
+          "oklch(95% 0.008 260)"
+        ]
+      },
+      "cp-success": {
+        "role": "semantic",
+        "displayName": "Success green",
+        "tonalRamp": [
+          "oklch(15% 0.085 164)",
+          "oklch(27% 0.085 164)",
+          "oklch(38% 0.085 164)",
+          "oklch(49% 0.085 164)",
+          "oklch(61% 0.085 164)",
+          "oklch(72% 0.085 164)",
+          "oklch(84% 0.085 164)",
+          "oklch(95% 0.085 164)"
+        ]
+      },
+      "cp-warn": {
+        "role": "semantic",
+        "displayName": "Warning amber",
+        "tonalRamp": [
+          "oklch(15% 0.095 68)",
+          "oklch(27% 0.095 68)",
+          "oklch(38% 0.095 68)",
+          "oklch(49% 0.095 68)",
+          "oklch(61% 0.095 68)",
+          "oklch(72% 0.095 68)",
+          "oklch(84% 0.095 68)",
+          "oklch(95% 0.095 68)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "headline": {
+        "displayName": "Page headline",
+        "purpose": "Primary page headings; 28px at the narrowest breakpoint."
+      },
+      "title": {
+        "displayName": "Section title",
+        "purpose": "Recurring section headings."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Application base text; prose and metadata use contextual smaller sizes."
+      },
+      "label": {
+        "displayName": "Action label",
+        "purpose": "Standard custom button labels."
+      }
+    },
+    "shadows": [],
+    "motion": [
+      {
+        "name": "control-transition",
+        "value": "160ms",
+        "purpose": "Background, border-color, and color changes on custom controls."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "transition: none; animation: none; scroll-behavior: auto",
+        "purpose": "Applied when prefers-reduced-motion is reduce."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "wide-container-min",
+        "value": "1450px"
+      },
+      {
+        "name": "tablet-max",
+        "value": "1000px"
+      },
+      {
+        "name": "compact-max",
+        "value": "700px"
+      },
+      {
+        "name": "phone-max",
+        "value": "480px"
+      }
+    ],
+    "tonalRampNote": "Synthesized OKLCH ramps are preview-only metadata; they are not production palette tokens.",
+    "focus": "outline: 3px solid #6389ee; outline-offset: 3px"
+  },
+  "components": [
+    {
+      "name": "Primary button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The main action within a study task.",
+      "html": "<button class=\"ds-button\">Open lesson <svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" aria-hidden=\"true\"><path d=\"M5 12h14m-6-6 6 6-6 6\"/></svg></button>",
+      "css": ".ds-button{font-family:var(--font-geist-sans, Geist),Arial,Helvetica,sans-serif;display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:42px;padding:10px 16px;border:1px solid transparent;border-radius:7px;font-size:13px;font-weight:550;line-height:1.4;cursor:pointer;transition:background 160ms,border-color 160ms,color 160ms}.ds-button:disabled{opacity:.45;cursor:not-allowed}.ds-button:focus-visible,.ds-input:focus-visible,.ds-nav a:focus-visible{outline:3px solid #6389ee;outline-offset:3px}@media(prefers-reduced-motion:reduce){.ds-button{transition:none}}.ds-button{background:var(--cp-blue,#2457d6);color:var(--cp-paper,#fff)}.ds-button:hover{background:#1944b2}"
+    },
+    {
+      "name": "Light button",
+      "kind": "button",
+      "refersTo": "button-light",
+      "description": "Secondary actions such as returning to slides.",
+      "html": "<button class=\"ds-button\">Back to slides</button>",
+      "css": ".ds-button{font-family:var(--font-geist-sans, Geist),Arial,Helvetica,sans-serif;display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:42px;padding:10px 16px;border:1px solid transparent;border-radius:7px;font-size:13px;font-weight:550;line-height:1.4;cursor:pointer;transition:background 160ms,border-color 160ms,color 160ms}.ds-button:disabled{opacity:.45;cursor:not-allowed}.ds-button:focus-visible,.ds-input:focus-visible,.ds-nav a:focus-visible{outline:3px solid #6389ee;outline-offset:3px}@media(prefers-reduced-motion:reduce){.ds-button{transition:none}}.ds-button{background:var(--cp-paper,#fff);color:var(--cp-ink,#172c46);border-color:#bdcce2}.ds-button:hover{background:#e9effa;border-color:#94aacf}"
+    },
+    {
+      "name": "Ghost button",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Quiet supporting actions within a task.",
+      "html": "<button class=\"ds-button\">Show worked solution</button>",
+      "css": ".ds-button{font-family:var(--font-geist-sans, Geist),Arial,Helvetica,sans-serif;display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:42px;padding:10px 16px;border:1px solid transparent;border-radius:7px;font-size:13px;font-weight:550;line-height:1.4;cursor:pointer;transition:background 160ms,border-color 160ms,color 160ms}.ds-button:disabled{opacity:.45;cursor:not-allowed}.ds-button:focus-visible,.ds-input:focus-visible,.ds-nav a:focus-visible{outline:3px solid #6389ee;outline-offset:3px}@media(prefers-reduced-motion:reduce){.ds-button{transition:none}}.ds-button{background:transparent;color:var(--cp-muted,#586a80)}.ds-button:hover{background:#e9effa;color:var(--cp-blue,#2457d6)}"
+    },
+    {
+      "name": "Answer field",
+      "kind": "input",
+      "refersTo": "answer-input",
+      "description": "A labeled mathematical answer field with visible focus.",
+      "html": "<label class=\"ds-label\" for=\"ds-answer\">Your answer</label><input class=\"ds-input\" id=\"ds-answer\" placeholder=\"e.g. 1/3, sqrt(2), 2*pi\" autocomplete=\"off\">",
+      "css": ".ds-label{font-family:var(--font-geist-sans, Geist),Arial,Helvetica,sans-serif;display:block;font-size:13px;font-weight:600;margin-bottom:10px;color:var(--cp-ink,#172c46)}.ds-input{font-family:var(--font-geist-sans, Geist),Arial,Helvetica,sans-serif;width:calc(100% - 30px);max-width:410px;font-size:16px;line-height:1.6;border:1px solid #aabbd3;border-radius:7px;background:var(--cp-paper,#fff);color:var(--cp-ink,#172c46);padding:12px 14px;caret-color:var(--cp-blue,#2457d6)}.ds-input::placeholder{color:#65758b}.ds-input:disabled{background:#f0f3f8}.ds-button:focus-visible,.ds-input:focus-visible,.ds-nav a:focus-visible{outline:3px solid #6389ee;outline-offset:3px}"
+    },
+    {
+      "name": "Mode navigation",
+      "kind": "nav",
+      "refersTo": "mode-navigation",
+      "description": "Text navigation with an active underline and mobile overflow.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Study modes\"><a href=\"#overview\" aria-current=\"page\">Study desk</a><a href=\"#read\">Read</a><a href=\"#practice\">Practise</a><a href=\"#explore\">Explore</a></nav>",
+      "css": ".ds-nav{font-family:var(--font-geist-sans, Geist),Arial,Helvetica,sans-serif;display:flex;gap:30px;height:51px;background:var(--cp-paper,#fff);overflow-x:auto}.ds-nav a{display:flex;align-items:center;white-space:nowrap;color:var(--cp-muted,#586a80);font-size:14px;font-weight:550;border-bottom:2px solid transparent;text-decoration:none;transition:color 160ms,background 160ms}.ds-nav a:hover,.ds-nav a[aria-current]{color:var(--cp-blue,#2457d6)}.ds-nav a[aria-current]{border-color:var(--cp-blue,#2457d6)}.ds-button:focus-visible,.ds-input:focus-visible,.ds-nav a:focus-visible{outline:3px solid #6389ee;outline-offset:3px}@media(prefers-reduced-motion:reduce){.ds-nav a{transition:none}}"
+    },
+    {
+      "name": "Source badge",
+      "kind": "chip",
+      "refersTo": "source-badge",
+      "description": "Quiet provenance metadata, rendered as a noninteractive label.",
+      "html": "<span class=\"ds-source\">From your tutorial</span>",
+      "css": ".ds-source{font-family:var(--font-geist-sans, Geist),Arial,Helvetica,sans-serif;display:inline-flex;align-items:center;gap:6px;padding:4px 8px;border-radius:4px;font-size:10px;font-weight:550;letter-spacing:.035em;line-height:1.6;background:#edf0f5;color:#53647c}"
+    },
+    {
+      "name": "Working panel",
+      "kind": "card",
+      "refersTo": "panel",
+      "description": "A flat bordered surface for a focused study task.",
+      "html": "<section class=\"ds-panel\"><h2>Your next session</h2><p>Start with what you know. Build toward what the evaluatives ask.</p></section>",
+      "css": ".ds-panel{font-family:var(--font-geist-sans, Geist),Arial,Helvetica,sans-serif;background:var(--cp-paper,#fff);border:1px solid var(--cp-line,#d9e1ec);border-radius:13px;padding:26px;min-width:0;color:var(--cp-ink,#172c46)}.ds-panel h2{font-size:23px;line-height:1.3;font-weight:600;letter-spacing:-.025em;margin:0 0 15px}.ds-panel p{font-size:14px;line-height:1.8;color:var(--cp-muted,#586a80);margin:0;max-width:72ch}"
+    },
+    {
+      "name": "Course register row",
+      "kind": "custom",
+      "description": "A ruled course entry with separated reading and practice actions.",
+      "html": "<div class=\"ds-course\"><a class=\"ds-title\" href=\"#read/series\"><span class=\"ds-number\">01</span><span><strong>Sequences and series</strong><small>Understand convergence, one term at a time.</small></span></a><a class=\"ds-reading\" href=\"#read/series\">Open slides</a><a class=\"ds-practice\" href=\"#practice/series\">Practise ↗</a></div>",
+      "css": ".ds-course{font-family:var(--font-geist-sans, Geist),Arial,Helvetica,sans-serif;display:grid;grid-template-columns:minmax(0,1fr) 110px 115px;gap:15px;align-items:center;border-bottom:1px solid var(--cp-line,#d9e1ec);padding:19px 18px;transition:background 160ms}.ds-course:hover{background:#edf2fa}.ds-course a{text-decoration:none}.ds-course a:focus-visible{outline:3px solid #6389ee;outline-offset:3px}.ds-title{display:flex;gap:22px;align-items:center;color:var(--cp-ink,#172c46)}.ds-title strong{font-size:16px;font-weight:600;line-height:1.45}.ds-number,.ds-reading{font-size:12px;color:var(--cp-muted,#586a80)}.ds-number{font-variant-numeric:tabular-nums}.ds-title small{display:block;margin-top:4px;font-size:12px;color:var(--cp-muted,#586a80)}.ds-practice{font-size:12px;color:var(--cp-blue,#2457d6);text-align:right}.ds-title:hover,.ds-reading:hover{color:var(--cp-blue,#2457d6)}@media(max-width:700px){.ds-course{grid-template-columns:1fr 115px}.ds-title{grid-column:1/3}.ds-reading{padding-left:35px}}@media(prefers-reduced-motion:reduce){.ds-course{transition:none}}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Calculus Workbench",
+    "overview": "CalcPath is a quiet working environment with white study surfaces, a cool wash, navy text, and cobalt actions. Fine rules organize the material while working mathematical diagrams provide expression. The interface is compact enough to show useful course context and spacious enough to read and solve a question.\n\nThis document captures the implemented system, rather than an approved visual comp. Its authority is the current application source, especially `app/calcpath.css`, with product context in `PRODUCT.md`. Surface composition remains in `.impeccable/surfaces/app-workspace-tsx.md`. Clear mathematical notation, keyboard access, and supportive feedback are durable requirements.",
+    "keyCharacteristics": [
+      "Quiet paper surfaces and fine ruled separation.",
+      "Cobalt actions with navy reading text.",
+      "Geist interface typography paired with KaTeX mathematics.",
+      "Mathematical instruments that respond to student input.",
+      "Compact navigation and generous focused practice."
+    ],
+    "rules": [
+      {
+        "name": "The Action Color Rule",
+        "body": "Use cobalt for actionable or selected interface elements; keep extended reading copy in ink and slate.",
+        "section": "colors"
+      },
+      {
+        "name": "The Ruled Surface Rule",
+        "body": "Separate related working areas with a border or tone before adding another elevated container.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** align navigation and working content to the shared container.",
+      "**Do** use ruled rows for established course and source registers.",
+      "**Do** keep mathematical notation readable and permit local formula overflow.",
+      "**Do** pair status colors with explicit text and maintain visible keyboard focus.",
+      "**Do** honor reduced-motion preferences and keep routine state changes brief."
+    ],
+    "donts": [
+      "**Don't** use primary action color for long reading passages.",
+      "**Don't** add shadows to every working surface.",
+      "**Don't** turn loaded but unused font roles or generic dark-theme tokens into an approved CalcPath theme.",
+      "**Don't** restore the removed study-station pre-heading labels or reader CHAPTER eyebrow as canonical components.",
+      "**Don't** treat synthesized sidecar tonal ramps as production palette tokens."
+    ]
+  }
+}

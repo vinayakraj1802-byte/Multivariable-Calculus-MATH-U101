@@ -1,0 +1,10 @@
+export type TopicId = 'series'|'polar'|'vectors'|'limits'|'partials'|'gradient'|'optimization'|'double'|'triple'|'line'|'surface';
+export type Difficulty = 'foundation'|'standard'|'evaluative';
+export type Topic = {id:TopicId; title:string; short:string; sections:string; lectures:string; description:string; formula:string; goals:string[]};
+export type Resource = {id:string; title:string; originalPath:string; aliases:string[]; url:string; kind:string; pages:number; bytes:number; sha256:string; course:string; year:string; instructor:string; topics:string[]; topicPages:Record<string,number[]>; textStatus:string};
+export type Manifest = {version:number; syllabus:string; releaseReady:boolean; archives:{file:string;complete:boolean;readableMembers:number;error:string|null}[]; excluded:{file:string;reason:string}[]; resources:Resource[]; blockers:string[]};
+export type Citation = {sheet?:number;question:string;page:number;path?:string;label?:string};
+export type Question = {id:string;familyId:string;fingerprint:string;topic:TopicId;difficulty:Difficulty;title:string;prompt:string;math:string;kind:'numeric'|'choice'|'self';answer:number|string;answerTex:string;options?:string[];hints:string[];steps:string[];checklist:string[];source:Citation;origin:'variation'|'tutorial'|'evaluative';eligible:boolean;verified:boolean;minutes:number};
+export type Attempt = {questionId:string;correct:boolean;assisted:boolean;selfAssessed:boolean;at:number;mode:'practice'|'review'|'mock'};
+export type Session = {id:string;mode:'practice'|'review'|'mock';ids:string[];index:number;startedAt:number;deadline?:number;answers:Record<string,string>;hints:Record<string,number>;graded:Record<string,boolean>;revealed:Record<string,boolean>;submitted:boolean};
+export type ProgressState = {version:1;seen:string[];attempts:Attempt[];reading:Record<string,number>;bookmarks:Record<string,number[]>;completed:string[];lastTopic:TopicId;lastResource?:string;session:Session|null;mockHistory:{at:number;total:number;correct:number}[]};
